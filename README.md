@@ -29,36 +29,42 @@
 | **gnu**  | *git checkout -b $1 ; git push --set-upstream origin $1* |
 
 ## How to use
-##### ZSH shell
+#### ZSH shell
 ```bash
 ./install.sh zsh
 ```
-<br/>
-##### Bash shell
+<br>
+
+#### Bash shell
 ```bash
 ./install.sh bash
 ```
-<br/>
+<br>
+
 ##### Get new version from GitHub
 ```bash
 ./install.sh fetch
 ```
-<br/>
+<br>
+
 ##### Just update .git-shortcuts from local git directory
 ```bash
 ./install.sh update
 ```
-<br/>
+<br>
+
 ##### Show current installed .git-shortcuts
 ```bash
 ./install.sh show
 ```
-<br/>
+<br>
+
 ##### Show difference between local git and your current installed version
 ```bash
 ./install.sh diff
 ```
-<br/>
+<br>
+
 ##### Show install script help message
 ```bash
 ./install.sh help
