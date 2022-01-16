@@ -60,6 +60,12 @@ function show_help_message() {
 	echo "show: Show content of current .git-shortcuts file."
 	echo "diff: Show difference between local repository and your current installed version."
 	echo "help or --help: Show this message"
+	echo "----------------------"
+	echo "Note: to use new commands, run this command:"
+	echo "ZSH shell"
+	echo ":::: source ~/.zshrc"
+	echo "Bash shell"
+	echo ":::: source ~/.bashrc"
 }
 
 function show_unknown_command_message() {
@@ -67,8 +73,8 @@ function show_unknown_command_message() {
 	echo "Run ./install.sh without parameters or ./install help or ./install --help"
 }
 
-if [ "$1" = "zsh" ]; then add_to_zshrc && update_git_shortcuts
-elif [ "$1" = "bash" ]; then add_to_bashrc && update_git_shortcuts
+if [ "$1" = "zsh" ]; then add_to_zshrc && update_git_shortcuts && source ~/.zshrc
+elif [ "$1" = "bash" ]; then add_to_bashrc && update_git_shortcuts && source ~/.bashrc
 elif [ "$1" = "fetch" ]; then fetch_git_shortcuts && update_git_shortcuts
 elif [ "$1" = "update" ]; then update_git_shortcuts
 elif [ "$1" = "show" ]; then show_git_shortcuts

@@ -33,38 +33,26 @@
 ```bash
 ./install.sh zsh
 ```
-<br>
-
 #### Bash shell
 ```bash
 ./install.sh bash
 ```
-<br>
-
 ##### Get new version from GitHub
 ```bash
 ./install.sh fetch
 ```
-<br>
-
 ##### Just update .git-shortcuts from local git directory
 ```bash
 ./install.sh update
 ```
-<br>
-
 ##### Show current installed .git-shortcuts
 ```bash
 ./install.sh show
 ```
-<br>
-
 ##### Show difference between local git and your current installed version
 ```bash
 ./install.sh diff
 ```
-<br>
-
 ##### Show install script help message
 ```bash
 ./install.sh help
@@ -72,4 +60,15 @@
 or
 ```bash
 ./install.sh --help
+```
+
+## Note
+To use installed .git-shortcuts just restart your terminal or run command:
+##### ZSH shell
+```bash
+source ~/.zshrc
+```
+##### Bash shell
+```bash
+source ~/.bashrc
 ```
