@@ -1,0 +1,35 @@
+alias g="git"
+
+alias gs="git status"
+alias gc="git checkout"
+alias gcl="git clone"
+alias gp="git push"
+alias gpu="git push --set-upstream origin"
+alias gpl="git pull"
+alias gf="git fetch --all"
+alias gm="git merge"
+alias gl="git log --oneline"
+alias gla="git log"
+alias gd="git diff"
+alias gr="git reset --hard"
+alias gcb="git checkout -b"
+alias gbv="git branch -v"
+alias gbr="git branch -r"
+alias gbd="git branch -d"
+alias gbrd="git branch -r -d"
+
+alias ga="git add"
+alias gaa="git add ."
+alias gcm="git commit -m"
+
+# experimental
+alias gcd="git checkout dev"
+alias gcr="git checkout round-game"
+
+alias gmd="git merge dev"
+alias gmr="git merge round-game"
+
+function gnu() {
+  gcb $1
+  gpu $1
+}
