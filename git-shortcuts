@@ -62,6 +62,7 @@ alias grs="git restore --staged"
 alias grm="git rm"
 alias grmr="git rm -r"
 alias grmc="git rm --cached"
+alias grmcr="git rm --cached -r"
 
 # Stashing
 alias gst="git stash"
