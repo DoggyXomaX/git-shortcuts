@@ -1,35 +1,71 @@
 alias g="git"
 
-alias gs="git status"
-
-alias gc="git checkout"
-alias gcb="git checkout -b"
-alias gr="git reset --hard"
-
-alias gcl="git clone"
-alias gp="git push"
-alias gpu="git push --set-upstream origin"
-alias gpl="git pull"
-alias gf="git fetch --all"
-alias gm="git merge"
-
-alias gd="git diff"
-alias gl="git log --oneline"
-alias gla="git log"
-
-alias gbv="git branch -v"
-alias gbr="git branch -r"
-alias gbd="git branch -d"
-alias gbrd="git branch -r -d"
-
+# Adding
 alias ga="git add"
 alias gaa="git add ."
-alias gcm="git commit -m"
 
+# Branches
+alias gb="git branch"
+alias gbd="git branch -d"
+alias gbD="git branch -D"
+alias gbdr="git branch -d -r"
+alias gbDr="git branch -D -r"
+alias gbv="git branch -v"
+alias gbvr="git branch -v -r"
+
+# Checkouts
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias gcof="git checkout -f"
+
+# Cloning
+alias gcl="git clone"
+
+# Commiting
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gca="git commit --amend"
+alias gcam="git commit --amend -m"
+
+# Difference
+alias gd="git diff"
+alias gdn="git diff --name-only"
+alias gds="git diff --staged"
+alias gdsn="git diff --staged --name-only"
+alias gdp="git diff @~1 @"
+
+# Fetching
+alias gf="git fetch"
+alias gfa="git fetch --all"
+
+# Logging
+alias gl="git log"
+alias glo="git log --oneline"
+
+# Merging
+alias gm="git merge"
+
+# Pushing/Pulling
+alias gp="git push"
+alias gpl="git pull"
+alias gpu="git push --set-upstream origin"
+function gnu() {
+  gcob $1
+  gpu $1
+}
+
+# Reset/Restore
+alias grh="git reset --hard"
+alias grs="git restore --staged"
+
+# Removings
+alias grm="git rm"
+alias grmr="git rm -r"
+alias grmc="git rm --cached"
+
+# Stashing
 alias gst="git stash"
 alias gstp="git stash pop"
 
-function gnu() {
-  gcb $1
-  gpu $1
-}
+# Status
+alias gs="git status"

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function update_git_shortcuts() {
 	echo "Update Git Shortcuts"
 	echo ":::: cp git-shortcuts ~/.git-shortcuts"
@@ -20,7 +22,7 @@ function fetch_git_shortcuts() {
 	echo "Fetching new version of git-shortcuts from Github..."
 	echo ":::: git fetch --all"
 	git fetch --all
-  echo ":::: git merge"
+	echo ":::: git merge"
 	git merge
 }
 
