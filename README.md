@@ -13,6 +13,11 @@
 | **gbDr**  | git branch -D -r                                       |
 | **gbv**   | git branch -v                                          |
 | **gbvr**  | git branch -v -r                                       |
+| **gcn**   | git config                                             |
+| **gcnu**  | git config user.name                                   |
+| **gcne**  | git config user.email                                  |
+| **gcngu** | git config --global user.name                          |
+| **gcnge** | git config --global user.email                         |
 | **gco**   | git checkout                                           |
 | **gcob**  | git checkout -b                                        |
 | **gcof**  | git checkout -f                                        |

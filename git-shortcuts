@@ -21,6 +21,13 @@ alias gcof="git checkout -f"
 # Cloning
 alias gcl="git clone"
 
+# Config
+alias gcn="git config"
+alias gcnu="git config user.name"
+alias gcne="git config user.email"
+alias gcngu="git config --global user.name"
+alias gcnge="git config --global user.email"
+
 # Commiting
 alias gc="git commit"
 alias gcm="git commit -m"
