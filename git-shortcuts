@@ -13,10 +13,10 @@ alias gbDr="git branch -D -r"
 alias gbv="git branch -v"
 alias gbvr="git branch -v -r"
 
-# Checkouts
-alias gco="git checkout"
-alias gcob="git checkout -b"
-alias gcof="git checkout -f"
+# Switches
+alias gsw="git switch"
+alias gswb="git switch -c"
+alias gswf="git switch -f"
 
 # Cloning
 alias gcl="git clone"
@@ -55,7 +55,7 @@ alias gm="git merge"
 # Pushing/Pulling
 alias gp="git push"
 alias gpl="git pull"
-alias gpu="git push --set-upstream origin"
+alias gpu="git push -u origin"
 function gnu() {
   gcob $1
   gpu $1

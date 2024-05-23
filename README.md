@@ -18,9 +18,9 @@
 | **gcne**  | git config user.email                                  |
 | **gcngu** | git config --global user.name                          |
 | **gcnge** | git config --global user.email                         |
-| **gco**   | git checkout                                           |
-| **gcob**  | git checkout -b                                        |
-| **gcof**  | git checkout -f                                        |
+| **gsw**   | git switch                                             |
+| **gswc**  | git switch -c                                          |
+| **gswf**  | git switch -f                                          |
 | **gcl**   | git clone                                              |
 | **gc**    | git commit                                             |
 | **gcm**   | git commit -m                                          |
@@ -38,7 +38,7 @@
 | **gm**    | git merge                                              |
 | **gp**    | git push                                               |
 | **gpl**   | git pull                                               |
-| **gpu**   | git push --set-upstream origin                         |
+| **gpu**   | git push -u origin                                     |
 | **grh**   | git reset --hard                                       |
 | **grs**   | git restore --staged                                   |
 | **grm**   | git rm                                                 |
@@ -48,7 +48,7 @@
 | **gst**   | git stash                                              |
 | **gstp**  | git stash pop                                          |
 | **gs**    | git status                                             |
-| **gnu**   | git checkout -b $1 ; git push --set-upstream origin $1 |
+| **gnu**   | git checkout -b $1 ; git push -u origin $1             |
 
 ## How to use
 #### ZSH shell
