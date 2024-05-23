@@ -48,7 +48,7 @@
 | **gst**   | git stash                                              |
 | **gstp**  | git stash pop                                          |
 | **gs**    | git status                                             |
-| **gnu**   | git checkout -b $1 ; git push -u origin $1             |
+| **gnu**   | git switch -c $1 ; git push -u origin $1              |
 
 ## How to use
 #### ZSH shell

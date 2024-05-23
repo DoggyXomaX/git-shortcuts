@@ -15,7 +15,7 @@ alias gbvr="git branch -v -r"
 
 # Switches
 alias gsw="git switch"
-alias gswb="git switch -c"
+alias gswc="git switch -c"
 alias gswf="git switch -f"
 
 # Cloning
@@ -57,7 +57,7 @@ alias gp="git push"
 alias gpl="git pull"
 alias gpu="git push -u origin"
 function gnu() {
-  gcob $1
+  gswc $1
   gpu $1
 }
 
