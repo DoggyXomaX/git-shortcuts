@@ -26,6 +26,7 @@
 | **gcm**   | git commit -m                                          |
 | **gca**   | git commit --amend                                     |
 | **gcam**  | git commit --amend -m                                  |
+| **gcmm**  | git commit -m "[$branch] $1" $...                      |
 | **gd**    | git diff                                               |
 | **gdn**   | git diff --name-only                                   |
 | **gds**   | git diff --staged                                      |

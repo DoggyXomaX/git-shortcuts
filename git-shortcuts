@@ -33,6 +33,11 @@ alias gc="git commit"
 alias gcm="git commit -m"
 alias gca="git commit --amend"
 alias gcam="git commit --amend -m"
+function gcmm() {
+  local branch
+  branch=$(git branch --show-current)
+  git commit -m "[$branch] $1" $2 $3 $4
+}
 
 # Difference
 alias gd="git diff"
